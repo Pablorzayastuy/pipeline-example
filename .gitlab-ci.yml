@@ -1,3 +1,6 @@
+stages:
+  - deploy
+
 deploy:
   image: ubuntu
   stage: deploy
@@ -5,6 +8,3 @@ deploy:
     - echo "before"
   script:
     - echo "test"
-
-  stages:
-    - deploy
